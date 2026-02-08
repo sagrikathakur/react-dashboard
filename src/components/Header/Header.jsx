@@ -108,10 +108,12 @@ const Header = () => {
             className="flex items-center gap-3 p-2 rounded-xl hover:bg-white/5 transition-all group"
           >
             <div className="relative">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-500 via-fuchsia-500 to-cyan-500 flex items-center justify-center ring-2 ring-white/10 group-hover:ring-violet-500/30 transition-all">
-                <User className="w-5 h-5 text-white" />
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center ring-1 ring-white/10 group-hover:ring-white/20 transition-all" style={{
+                background: 'rgba(255, 255, 255, 0.03)'
+              }}>
+                <User className="w-5 h-5 text-white/70" />
               </div>
-              <div className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-emerald-400 rounded-full border-2 border-[#030712]" />
+              <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-500/80 rounded-full border-2 border-[#030712]" />
             </div>
             <div className="hidden md:block text-left">
               <p className="text-sm font-medium text-white">Admin User</p>

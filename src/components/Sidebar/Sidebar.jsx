@@ -9,8 +9,7 @@ import {
   LogOut,
   ChevronLeft,
   ChevronRight,
-  Globe,
-  Sparkles
+  Globe
 } from 'lucide-react'
 
 const navItems = [
@@ -37,15 +36,17 @@ const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
       {/* Logo */}
       <div className="flex items-center gap-3 p-6 border-b border-white/5 relative overflow-hidden">
         <div className="relative">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-500 via-fuchsia-500 to-cyan-500 flex items-center justify-center shrink-0 animate-pulse-glow">
-            <Globe className="w-6 h-6 text-white" />
+          <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{
+            background: 'rgba(255, 255, 255, 0.03)',
+            border: '1px solid rgba(255, 255, 255, 0.08)'
+          }}>
+            <Globe className="w-5 h-5 text-white/70" />
           </div>
-          <Sparkles className="absolute -top-1 -right-1 w-4 h-4 text-amber-400 animate-float" />
         </div>
         {!isCollapsed && (
           <div className="animate-fadeIn">
-            <h1 className="text-xl font-bold gradient-text">TravelHub</h1>
-            <p className="text-xs text-slate-500">Premium Dashboard</p>
+            <h1 className="text-lg font-semibold text-white">TravelHub</h1>
+            <p className="text-xs text-slate-600">Dashboard</p>
           </div>
         )}
       </div>
